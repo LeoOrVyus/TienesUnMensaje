@@ -2,10 +2,10 @@ import csv
 import email
 import os
 
-# Define la ruta del archivo CSV
+# Ruta del archivo CSV
 ruta_archivo = "/ruta/a/archivo.csv"
 
-# Define una función para leer los correos electrónicos desde el archivo CSV
+# función para leer los correos electrónicos desde el CSV
 def leer_correos_desde_csv(ruta_archivo):
     with open(ruta_archivo, "r") as archivo_csv:
         lector_csv = csv.reader(archivo_csv)
@@ -17,12 +17,12 @@ def leer_correos_desde_csv(ruta_archivo):
             para = correo["To"]
             asunto = correo["Subject"]
             cuerpo = correo.get_payload()
-            # Haz algo con los detalles del correo electrónico (por ejemplo, envíalos a otra dirección de correo electrónico)
+            # Extraer datos del correo
             print("De:", de)
             print("Para:", para)
             print("Asunto:", asunto)
             print("Cuerpo:", cuerpo)
             print("")
 
-# Ejecuta la función para leer los correos electrónicos desde el archivo CSV
+#función para leer los correos desde el CSV
 leer_correos_desde_csv(ruta_archivo)
