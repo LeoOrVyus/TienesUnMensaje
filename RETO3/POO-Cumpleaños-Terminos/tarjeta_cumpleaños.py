@@ -8,7 +8,7 @@ import mysql.connector
 smtp_server = "smtp.gmail.com"
 smtp_port = 587
 smtp_username = "naoreto3@gmail.com"
-smtp_password = "mrhhoolaxryspyhs"
+smtp_password = ""
 from_address = 'Nao Reto 3 <naoreto3@gmail.com>'
 subject = "Feliz cumpleaños!"
 body = ''
@@ -17,7 +17,7 @@ today = datetime.datetime.now()
 conexion = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Grettel33",
+    password="",
     database="empleados"
 )
 
