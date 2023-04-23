@@ -42,7 +42,7 @@ def crear_empleado():
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Grettel33",
+        password="",
         database="empleados"
     )
 
