@@ -5,7 +5,7 @@ import os
 
 # Configurar los detalles de la cuenta de Gmail
 email_user = 'naoreto3@gmail.com'
-email_pass = 'ascyodhcdfkfetwi'
+email_pass = ''
 imap_url = 'imap.gmail.com'
 
 # Conectar con la cuenta de Gmail usando IMAP
